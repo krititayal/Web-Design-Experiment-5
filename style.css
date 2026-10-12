@@ -1,0 +1,182 @@
+*{
+  box-sizing:border-box
+}
+body{
+  margin:0;
+  min-height:100vh;
+  background:#f1efe8;
+  color:#2e3a34;
+  font:14px/1.55 Arial,sans-serif;
+  padding:25px 16px
+}
+.shell{
+  max-width:620px;
+  margin:auto;
+  background:#faf9f5;
+  padding:26px 40px;
+  min-height:90vh;
+  box-shadow:0 10px 45px #34402f12
+}
+header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid #e7e6de;
+  padding-bottom:14px
+}
+.brand{
+  font:19px Georgia;
+  text-decoration:none;
+  color:#33493a
+}
+.brand span{
+  color:#d58653;
+  margin-left:5px
+}
+header p,.label,.forecast-head span{
+  font-size:9px;
+  letter-spacing:.12em;
+  color:#91988d
+}
+.search{
+  padding:35px 0 22px
+}
+.search h1{
+  font:500 35px/1.12 Georgia;
+  letter-spacing:-.04em;
+  margin:12px 0 20px
+}
+.search form{
+  display:flex;
+  border-bottom:1px solid #879687;
+  max-width:400px
+}
+.search input{
+  border:0;
+  outline:0;
+  background:none;
+  flex:1;
+  min-width:0;
+  padding:12px 3px;
+  color:#304236;
+  font-size:14px
+}
+.search button{
+  border:0;
+  background:none;
+  color:#405d49;
+  font-size:25px;
+  cursor:pointer
+}
+.hint{
+  font-size:10px;
+  color:#999f95
+}
+.current{
+  background:#e8ede5;
+  padding:22px 24px;
+  display:grid;
+  grid-template-columns:1fr auto;
+  min-height:160px
+}
+.current .label{
+  margin:0
+}
+.date{
+  font-size:11px;
+  color:#818b80;
+  margin:4px 0
+}
+.current h2{
+  font:48px Georgia;
+  margin:5px 0
+}
+.current #condition{
+  margin:0;
+  color:#667468;
+  font-size:12px
+}
+.icon{
+  font-size:48px;
+  color:#b88a43;
+  align-self:center;
+  padding-right:14px
+}
+.highlow{
+  grid-column:1/3;
+  font-size:9px;
+  letter-spacing:.08em;
+  color:#848c82
+}
+.highlow b{
+  font-size:12px;
+  letter-spacing:0;
+  color:#425448;
+  margin-right:12px
+}
+.forecast-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin:22px 0 8px
+}
+.forecast-head h3{
+  font:18px Georgia;
+  margin:0
+}
+.forecast{
+  border-top:1px solid #e5e6df
+}
+.day{
+  display:grid;
+  grid-template-columns:1fr 42px 70px;
+  align-items:center;
+  border-bottom:1px solid #e5e6df;
+  padding:10px 3px;
+  font-size:12px
+}
+.day .wx{
+  font-size:18px;
+  color:#bd9454
+}
+.day .temps{
+  text-align:right;
+  color:#788178
+}
+.day .temps b{
+  color:#39483d
+}
+.message{
+  min-height:18px;
+  color:#a6523e;
+  font-size:12px
+}
+footer{
+  border-top:1px solid #e7e6de;
+  padding-top:14px;
+  margin-top:15px;
+  font-size:9px;
+  color:#9a9f96
+}
+footer a{
+  color:#697d6d
+}
+.sr-only{
+  position:absolute;
+  clip:rect(0,0,0,0);
+  width:1px;
+  height:1px;
+  overflow:hidden
+}
+@media(max-width:520px){
+  .shell{
+    padding:22px 20px;
+    min-height:95vh
+  }
+  .search h1{
+    font-size:31px
+  }
+  header p{
+    font-size:8px
+  }
+}
