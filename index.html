@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Look up current conditions and a five-day forecast for a city.">
+    <title>Weather, Nearby</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="app.js" defer>
+      </script>
+    </head>
+    <body>
+      <main class="shell">
+        <header>
+          <a class="brand" href="./">weather, nearby<span>✳</span>
+          </a>
+          <p>JUST THE FORECAST, PLEASE.</p>
+          </header>
+          <section class="search">
+            <p class="label">A small check-in with the sky</p>
+              <h1>How’s it looking<br>in your corner?</h1>
+                <form id="search-form">
+                  <label class="sr-only" for="city">City or town</label>
+                    <input id="city" placeholder="Try Delhi, India" value="Delhi" required>
+                    <button aria-label="Search city">→</button>
+                    </form>
+                    <p class="hint">Search by city name. Add a country for a closer match.</p>
+                    </section>
+                    <section id="result" hidden aria-live="polite">
+                      <div class="current">
+                        <div>
+                          <p id="location" class="label">
+                          </p>
+                          <p id="date" class="date">
+                          </p>
+                          <h2 id="temperature">—</h2>
+                            <p id="condition">
+                            </p>
+                          </div>
+                          <div id="icon" class="icon" aria-hidden="true">☀</div>
+                            <div class="highlow">HIGH <b id="high">—</b> &nbsp; LOW <b id="low">—</b>
+                            </div>
+                          </div>
+                          <div class="forecast-head">
+                            <h3>Coming up</h3>
+                              <span>4 DAYS</span>
+                              </div>
+                              <div id="forecast" class="forecast">
+                              </div>
+                            </section>
+                            <p id="message" role="status" class="message">
+                            </p>
+                            <footer>Weather data by <a href="https://open-meteo.com/" target="_blank" rel="noreferrer">Open-Meteo</a> · No API key needed</footer>
+                            </main>
+                          </body>
+                        </html>
